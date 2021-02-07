@@ -1,1 +1,1 @@
-[plotchar()](plotchar.md)
+[plotchar()](modster/pinescript/plotchar.md)
