@@ -33,3 +33,8 @@ show_last (input integer) If set, defines the number of chars (from the last bar
 ---
 ### notes
 - size.auto, size.tiny, size.small, size.normal, size.large, size.huge. 
+---
+```javascript
+plotchar(series, title, char, location, color, transp, offset, text, textcolor, editable, size, show_last, display)
+```
+
