@@ -28,6 +28,8 @@ show_last (input integer) If set, defines the number of chars (from the last bar
 
 - display (const integer) Controls where the plot is displayed. Possible values are: display.none, display.all. Default is display.all
 
+[tradingview.com/pine-script-reference/v4/#fun_plotchar](https://www.tradingview.com/pine-script-reference/v4/#fun_plotchar)
 
-size.auto, size.tiny, size.small, size.normal, size.large, size.huge. Default is size.auto
-https://www.tradingview.com/pine-script-reference/v4/#fun_plotchar
+
+## notes
+- size.auto, size.tiny, size.small, size.normal, size.large, size.huge. Default is size.auto
