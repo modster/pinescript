@@ -1,8 +1,9 @@
 # plotchar()
+
 ```javascript
 plotchar(series, title, char, location, color, transp, offset, text, textcolor, editable, size, show_last, display) → void
 ```
-
+size.auto, size.tiny, size.small, size.normal, size.large, size.huge. Default is size.auto.
 ### ARGUMENTS
 - series (series) Series of data to be plotted as shapes. Series is treated as a series of boolean values for all location values except location.absolute. Required argument.
 
@@ -10,7 +11,8 @@ plotchar(series, title, char, location, color, transp, offset, text, textcolor, 
 char (input string) Character to use as a visual shape.
 
 - location (input string) Location of shapes on the chart. Possible values are: location.abovebar, location.belowbar, location.top, location.bottom, location.absolute. Default value is location.abovebar.
-color (color) Color of the shapes. You can use constants like 'color=color.red' or 'color=#ff001a' as well as complex expressions like 'color = close >= open ? color.green : color.red'. Optional argument.
+
+- color (color) Color of the shapes. You can use constants like 'color=color.red' or 'color=#ff001a' as well as complex expressions like 'color = close >= open ? color.green : color.red'. Optional argument.
 
 - transp (input integer) Transparency of the shapes. Possible values are from 0 (not transparent) to 100 (invisible). Optional argument.
 - offset (integer) Shifts shapes to the left or to the right on the given number of bars. Default is 0.
