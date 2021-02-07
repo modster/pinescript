@@ -1,9 +1,9 @@
-# plotchar()
+# [plotchar()](https://www.tradingview.com/pine-script-reference/v4/#fun_plotchar)
 
 ```javascript
 plotchar(series, title, char, location, color, transp, offset, text, textcolor, editable, size, show_last, display) → void
 ```
-size.auto, size.tiny, size.small, size.normal, size.large, size.huge. Default is size.auto.
+
 ### ARGUMENTS
 - series (series) Series of data to be plotted as shapes. Series is treated as a series of boolean values for all location values except location.absolute. Required argument.
 
@@ -28,4 +28,6 @@ show_last (input integer) If set, defines the number of chars (from the last bar
 
 - display (const integer) Controls where the plot is displayed. Possible values are: display.none, display.all. Default is display.all
 
+
+size.auto, size.tiny, size.small, size.normal, size.large, size.huge. Default is size.auto
 https://www.tradingview.com/pine-script-reference/v4/#fun_plotchar
