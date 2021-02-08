@@ -8,7 +8,9 @@
 // let user change stop % 
 stop = input(defval=0.01, title="Stop", type=input.float, minval=0.01, maxval=100, step=0.01)
 x = [price you bought at] // <--------------
-limit = // <---------------
+
+var pivotLo = 0.0
+var pivotHi = 0.0
 
 if long
     stopPrice = x * stop
@@ -33,8 +35,6 @@ alertcondition(y, "trailingStop", message='{"activationPrice":"{{}}", stopPrice"
 ### use pivotHigh and pivotLow for limit and take-profit orders
 ---
 ```
-var pivotLo = 0.0
-var pivotHi = 0.0
 
 pivotHiCondition= not na(pivotHigh)
 pivotHi := pivotHiCondition ? pivotHigh : pivotHi[1]
