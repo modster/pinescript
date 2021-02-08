@@ -1,7 +1,15 @@
 # strategy.entry
-## _Parameters:_
-```javascript
+## _Examples:_
 
+
+```javascript
+if (crossover(source, lower))
+    strategy.entry("BBandLE", strategy.long, stop=lower,
+        oca_name="BollingerBands",
+        oca_type=strategy.oca.cancel, comment="BBandLE")
+else
+    strategy.cancel(id="BBandLE")
+    
 ```
 
 ```javascript
