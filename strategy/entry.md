@@ -1,6 +1,5 @@
 # strategy.entry
-## **Parameters:**
-
+## _Parameters:_
 ```javascript
 
 ```
@@ -26,9 +25,10 @@ if xUp
 else if xDn
     strategy.entry("Short", strategy.short, stop = low, alert_message = "Stop-sell executed (stop was " + tostring(low) + ")")
 
-// plot the 
+// plot the data at the appropriate locations
 plotchar(xUp, "Go Long",  "▲", location.bottom, color.lime, size = size.tiny)
 plotchar(xDn, "Go Short", "▼", location.top,    color.red,  size = size.tiny)
 hline(50)
 plot(r)
+
 ```
