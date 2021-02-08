@@ -1,5 +1,6 @@
 # ENTRIES
 
+### Straegy.entey
 ```javascript
 strategy.entry('{"Long", strategy.long, stop = high, alert_message='{"long":"' + tostring(high) + '"}')")
 ```
