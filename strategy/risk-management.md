@@ -6,11 +6,9 @@
 ```javascript
 stop = input(defval=1, title="Stop %", type=input.float, minval=0.01, maxval=100, step=0.01)
 // for buy orders:
-longStop := 100 + stop / 100 
-// for sell orders
-shortStop := 100 - stop / 100 
-label.new(bar_index, longStop, text=tostring(longStop))
-label.new(bar_index, shortStop, text=tostring(shortStop))
+longStop = (100 - stop) / 100
+longStop := close * longStop
+plot(longStop, title="longstop", color=color.fuchsia, linewidth=3, style=plot.style_line, trackprice=true )
 ```
 ###  use pivotHigh and pivotLow for limit and take-profit orders
 ---
