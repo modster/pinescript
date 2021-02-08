@@ -38,7 +38,7 @@ pivotHi := pivotHiCondition ? pivotHigh : pivotHi[1]
 plot(pivotHi, etc)
 pivotLoCondition= not na(pivotLow)
 pivotLow := pivotLowCondition ? pivotLow : pivotLow[1]
-label.new(bar_index, high, text=tostring(high))
+label.new(bar_index, pivotHi, text=tostring(pivotHi))
 
 
 plot(pivotLow, etc)
