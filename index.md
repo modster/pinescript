@@ -1,1 +1,1 @@
-[plotchar()](plotchar.md)
+[plotchar()](/plotchar.md)
