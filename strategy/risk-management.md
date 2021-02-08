@@ -33,8 +33,8 @@ alertcondition(y, "trailingStop", message='{"activationPrice":"{{}}", stopPrice"
 var pivotLo = 0.0 // might be wrong type?
 var pivotHi = 0.0 // might be wrong type?
 
-pHi= not na(pivotHigh)
-pivotH := swh_cond ? swh : hprice[1]
+pivotHi= not na(pivotHigh)
+pivotHi := pivotHi ? pivotHigh : na
 
 // 
 if(y)
