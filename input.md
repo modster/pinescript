@@ -20,6 +20,7 @@ input(defval, title, type) → series[float]
 
 ## EXAMPLE
 ---
+### Boolean
 ```
 b = input(title="On/Off", type=input.bool, defval=true)
 plot(b ? open : na)
@@ -30,13 +31,13 @@ plot(b ? open : na)
 i = input(title="Offset", type=input.integer, defval=7, minval=-10, maxval=10)
 plot(offset(close, i))
 ```
-## float
+### float
 ---
 ```
 f = input(title="Angle", type=input.float, defval=-0.5, minval=-3.14, maxval=3.14, step=0.02)
 plot(sin(f) > 0 ? close : open)
 ```
-## symbol
+### symbol
 ---
 ```
 sym = input(title="Symbol", type=input.symbol, defval="DELL")
