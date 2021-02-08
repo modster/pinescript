@@ -4,16 +4,16 @@
 ```javascript
 //@version=4
 // s t o p L o s s
-// a function that determines what the stopLoss should be short and long entries
+// a function that determines what the stop and limit should be for short and long entries
 stop = input(defval=0.01, title="Stop", type=input.float, minval=0.01, maxval=100, step=0.01)
-
-x = [price you bought at]
+x = [price you bought at] // <--------------
+limit = // <---------------
 
 if long
-    stopPrice = x * y
+    stopPrice = x * stop
 
 // Trailing Stop:
-var activationPrice = lowest(close, length)
+var activationPrice = lowest(close, length) //<--------------
 
 // this part needs work
 if close < ema76
