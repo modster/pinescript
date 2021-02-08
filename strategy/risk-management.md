@@ -1,6 +1,6 @@
 # Risk Management
 ## s t o p L o s s ( )
-### A function that determines what the stop, take-profit, and limit should be for short and long entries
+### A function that determines what the stop, take-profit, activationPrice, and limit values should be for short and long entries
 ---
 ```javascript
 //@version=4
