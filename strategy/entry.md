@@ -1,6 +1,10 @@
-# ENTRIES
+# strategy.entry
+## Parameters:~~
 
-### Straegy.entey
+```javascript
+
+```
+
 ```javascript
 strategy.entry('{"Long", strategy.long, stop = high, alert_message='{"long":"' + tostring(high) + '"}')")
 ```
