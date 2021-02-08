@@ -1,5 +1,5 @@
 # strategy.entry
-## Parameters:~~
+## **Parameters:**
 
 ```javascript
 
