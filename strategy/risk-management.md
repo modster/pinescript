@@ -34,7 +34,7 @@ var pivotLo = 0.0 // might be wrong type?
 var pivotHi = 0.0 // might be wrong type?
 
 pivotHi= not na(pivotHigh)
-pivotHi := pivotHi ? pivotHigh : na
+pivotHi := pivotHi ? pivotHigh : pivotHi[1]
 
 // 
 if(y)
