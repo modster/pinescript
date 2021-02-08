@@ -34,7 +34,7 @@ var pivotLo = 0.0 // might be wrong type?
 var pivotHi = 0.0 // might be wrong type?
 
 if pivotHigh not na(pivotHigh)
-
+pivotH := swh_cond ? swh : hprice[1]
 
 // 
 if(y)
