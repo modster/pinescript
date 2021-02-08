@@ -2,9 +2,12 @@
 
 
 ```javascript
-// Stop Loss:
+//@version4
+// s t o p L o s s
+// a function that determines what the stopLoss should be for sort and long entries
 x = [price you bought at]
-stopPrice = x * 0.01
+if long
+    stopPrice = x * 0.01
 
 // Trailing Stop:
 var activationPrice = lowest(close, length)
