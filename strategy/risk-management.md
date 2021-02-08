@@ -2,7 +2,6 @@
 ##
 
 ```javascript
-//verion4
 
 x = price you bought at
 stop = x * 0.01
@@ -27,3 +26,5 @@ if(y)
     alert(message='{"stopPrice":"{{stop}}"}')
 else
     sell
+
+    ...
