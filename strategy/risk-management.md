@@ -36,9 +36,10 @@ var pivotHi = 0.0 // might be wrong type?
 pivotHiCondition= not na(pivotHigh)
 pivotHi := pivotHiCondition ? pivotHigh : pivotHi[1]
 label.new(bar_index, pivotHi, text=tostring(pivotHi))
+
 pivotLoCondition= not na(pivotLow)
 pivotLow := pivotLowCondition ? pivotLow : pivotLow[1]
-
+label.new(bar_index, pivotHi, text=tostring(pivotHi))
 
 plot(pivotLow, etc)
 
