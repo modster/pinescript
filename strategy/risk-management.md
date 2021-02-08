@@ -30,6 +30,10 @@ if(y)
 alertcondition(y, "trailingStop", message='{"activationPrice":"{{}}", stopPrice":"{{plot("activationPrice")}}"}')
 
 //set limit sell orders at pivotHigh and pivotLow
+var pivotLo = 0.0 // might be wrong type?
+var pivotHi = 0.0 // might be wrong type?
+
+if(pivotHigh)
 
 
 // 
