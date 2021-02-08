@@ -8,7 +8,11 @@ stop = input(defval=1, title="Stop %", type=input.float, minval=0.01, maxval=100
 // for buy orders:
 longStop = (100 - stop) / 100
 longStop := close * longStop
-plot(longStop, title="longstop", color=color.fuchsia, linewidth=3, style=plot.style_line, trackprice=true )
+plotchar(longStop, "longStop", "", location.top)
+// for buy orders:
+shortStop = (100 + stop) / 100
+shortStop := close * longStop
+plotchar(shortStop, "shortStop", "", location.top)
 ```
 ###  use pivotHigh and pivotLow for limit and take-profit orders
 ---
