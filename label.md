@@ -16,3 +16,11 @@ label.set_size(label1, size.large)
 ```
 ### RETURNS
 Label ID object which may be passed to label.setXXX and label.getXXX functions
+
+### EXAMPLE
+Debugging a numerical value
+
+---
+```
+label.new(bar_index, high, text=tostring(high))
+```
