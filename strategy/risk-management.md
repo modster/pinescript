@@ -2,12 +2,14 @@
 
 
 ```javascript
-//@version4
+//@version=4
 // s t o p L o s s
-// a function that determines what the stopLoss should be for sort and long entries
+// a function that determines what the stopLoss should be short and long entries
+stopLoss = input()
 x = [price you bought at]
+
 if long
-    stopPrice = x * 0.01
+    stopPrice = x * y
 
 // Trailing Stop:
 var activationPrice = lowest(close, length)
