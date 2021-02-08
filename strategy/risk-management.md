@@ -5,7 +5,8 @@
 //@version=4
 // s t o p L o s s
 // a function that determines what the stopLoss should be short and long entries
-stopLoss = input()
+stop = input(defval=0.01, title="Stop", type=, minval=, maxval=100, step=0.01, options) → input float
+
 x = [price you bought at]
 
 if long
