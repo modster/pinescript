@@ -14,13 +14,23 @@ label.set_xloc(label1, time, xloc.bar_time)
 label.set_color(label1, color.red)
 label.set_size(label1, size.large)
 ```
-### RETURNS
+## RETURNS
 Label ID object which may be passed to label.setXXX and label.getXXX functions
 
+---
 ### EXAMPLE
+
 Debugging a numerical value
 
 ---
 ```
 label.new(bar_index, high, text=tostring(high))
+```
+
+### EXAMPL
+---
+```
+//@version=4
+study("Simple label", "", true)
+label.new(bar_index, high, syminfo.ticker)
 ```
