@@ -27,8 +27,6 @@ pivotHi := pivotHiCondition ? pivotHigh : pivotHi[1]
 pivotLoCondition= not na(pivotLow)
 pivotLow := pivotLowCondition ? pivotLow : pivotLow[1]
 // label.new(bar_index, pivotHi, text=tostring(pivotHi))
-if (...)
-    alert(message='{"activationPrice":"' + tostring(pivotHi) +'", "limit":"' + tostring(pivotLo) +'"}')
 ```
 
 ### Trailing Stop
@@ -40,7 +38,10 @@ The Trailing Stop is a type of order on Binance. On a long position the activati
 // Trailing Stop:
 var activationPrice = pivotHigh
 
-alertcondition(y, "trailingStop", message='{"activationPrice":"{{}}", stopPrice":"{{plot("activationPrice")}}"}')
+if (x)
+    alert(message='{"activationPrice":"' + tostring(pivotHi) +'", "limit":"' + tostring(pivotLo) +'"}')
+
+alertcondition(x, "trailingStop", message='{"activationPrice":"{{}}", stopPrice":"{{plot("activationPrice")}}"}')
 ```
 ### Are we long or short?
 ---
