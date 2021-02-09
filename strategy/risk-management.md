@@ -30,21 +30,9 @@ pivotLow := pivotLowCondition ? pivotLow : pivotLow[1]
 if (...)
     alert(message='{"activationPrice":"' + tostring(pivotHi) +'", "limit":"' + tostring(pivotLo) +'"}')
 ```
-### ratcheting stop loss
----
-```
-var ratchetingStop = 
-if crossunder(close, ratchetingStop))
-    
 
-alertcondition(ratchetingStop, title="ratchetingStop", message='{"marketOrder":"{{plot("position")}}"}')
-```
-### Are we long or short?
----
-```
-
-```
-### 
+### Trailing Stop
+The Trailing Stop is a type of order on Binance. On a long position the activation price is < then the purchase price. The activaation price must be hit before the trailing stop begins "trailing"
 ( a work in progress )
 
 ---
@@ -54,6 +42,30 @@ var activationPrice = pivotHigh
 
 alertcondition(y, "trailingStop", message='{"activationPrice":"{{}}", stopPrice":"{{plot("activationPrice")}}"}')
 ```
+### Are we long or short?
+---
+```
+var position = false
+
+if ...
+    panic := true
+else
+    panic := false
+```
+### ratcheting stop loss
+---
+```
+var panic = false
+var ratchetingStop = 
+
+if crossunder(close, ratchetingStop))
+    panic := true
+else
+    panic := false
+
+alertcondition(panic, title="ratchetingStop", message='{"marketOrder":"{{plot("position")}}"}')
+```
+
 
 
 ---
