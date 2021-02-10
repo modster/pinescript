@@ -1,0 +1,11 @@
+{{strategy.position_size}}
+{{strategy.order.action}}
+{{strategy.order.contracts}}
+{{strategy.order.price}}
+{{strategy.order.id}}
+{{strategy.order.comment}}
+{{strategy.order.alert_message}}
+{{strategy.market_position}}
+{{strategy.market_position_size}}
+{{strategy.prev_market_position}}
+{{strategy.prev_market_position_size}}
