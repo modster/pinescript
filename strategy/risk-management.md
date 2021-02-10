@@ -54,6 +54,10 @@ else
     panic := false
 ```
 ### ratcheting stop loss
+- At bar close
+- When a new order is made in the same direction
+- 
+
 ---
 ```
 var panic = false
