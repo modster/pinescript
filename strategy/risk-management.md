@@ -72,8 +72,21 @@ alertcondition(panic, title="ratchetingStop", message='{"marketOrder":"{{plot("p
 ```
 
 
-
+### what if we get contradictory signals?
 ---
 ```
+if crossunder(sem17, ema76)
+    if position==long
+        closePosition
+    else
+        do nothing or sell more
+else
+
+if crossunder(ema17, ema08)
+    if position==long
+        take profits
+        adjust stop
+
 
 ```
+
