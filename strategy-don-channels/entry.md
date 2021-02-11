@@ -1,9 +1,15 @@
 # Donchian Channel Surfing
 
 ```javascript
-// l o n g
+// L o n g 👍
 if close >= upperDon
-    alert(message="long")
+    alert(message="buy")
+    longStop := round(ema17)
+    longcounter =+ 1
+
+// 👎 S h o r t 
 if close <= lowerDon
-    alert(message="short")
-    ```
+    alert(message="sell")
+    shortStop := round(ema17)
+    shortcounter =+ 1
+```
